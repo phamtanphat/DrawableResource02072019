@@ -8,8 +8,11 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <include layout="@layout/layout_ic_facebook"/>
+    <!--<include layout="@layout/layout_ic_facebook"/>-->
 
-
-
+    <ImageView
+        android:id="@+id/imageviewBattery"
+        android:src="@drawable/background_battery"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
 </LinearLayout>
