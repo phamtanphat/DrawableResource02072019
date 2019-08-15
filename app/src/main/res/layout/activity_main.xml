@@ -8,32 +8,8 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:elevation="2dp"
-        android:padding="10dp"
-        android:background="@drawable/background_button_facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <FrameLayout
-            android:background="#ffff"
-            android:layout_width="50dp"
-            android:layout_height="50dp">
-            <ImageView
-                android:src="@drawable/ic_facebook"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </FrameLayout>
-        <Button
-            android:drawableLeft="@mipmap/ic_launcher"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textColor="#ffff"
-            android:background="@android:color/transparent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign in with facebook" />
-    </LinearLayout>
+    <include layout="@layout/layout_ic_facebook"/>
+
 
 
 </LinearLayout>
