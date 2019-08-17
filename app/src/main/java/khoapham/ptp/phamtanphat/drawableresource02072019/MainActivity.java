@@ -12,17 +12,17 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imgBattery;
-    int level = 0;
+//    ImageView imgBattery;
+//    int level = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imgBattery = findViewById(R.id.imageviewBattery);
+//        imgBattery = findViewById(R.id.imageviewBattery);
 
-        final Drawable drawable = imgBattery.getDrawable();
-        imgBattery.setImageLevel(0);
+//        final Drawable drawable = imgBattery.getDrawable();
+//        imgBattery.setImageLevel(0);
 
 //        final CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
 //            @Override
@@ -41,14 +41,13 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        };
 //        countDownTimer.start();
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_SHORT).show();
-                handler.postDelayed(this,1000);
-            }
-        },1000);
-
+//        final Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+//                handler.postDelayed(this,1000);
+//            }
+//        },1000);
     }
 }

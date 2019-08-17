@@ -10,9 +10,17 @@
 
     <!--<include layout="@layout/layout_ic_facebook"/>-->
 
-    <ImageView
-        android:id="@+id/imageviewBattery"
-        android:src="@drawable/background_battery"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
+    <!--<ImageView-->
+        <!--android:id="@+id/imageviewBattery"-->
+        <!--android:src="@drawable/background_battery"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp" />-->
+    <!--<Button-->
+        <!--android:background="@drawable/background_button_selector"-->
+        <!--android:text="Selector"-->
+        <!--android:id="@+id/buttonSelectorDrawable"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
 </LinearLayout>
