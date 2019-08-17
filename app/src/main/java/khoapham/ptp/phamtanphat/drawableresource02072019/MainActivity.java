@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
 //    ImageView imgBattery;
 //    int level = 0;
-    RadioButton rbAndroid,rbios,rbphp;
-    RadioGroup radioGroup;
+//    RadioButton rbAndroid,rbios,rbphp;
+//    RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,19 +54,20 @@ public class MainActivity extends AppCompatActivity {
 //                handler.postDelayed(this,1000);
 //            }
 //        },1000);
-        radioGroup = findViewById(R.id.radiogroup);
-        rbAndroid = findViewById(R.id.radioAndroid);
-        rbios = findViewById(R.id.radioios);
-        rbphp = findViewById(R.id.radioPhp);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                switch (i){
-                    case R.id.radioAndroid :
-                        Log.d("BBB","Radio android");
-                        break;
-                }
-            }
-        });
+//        radioGroup = findViewById(R.id.radiogroup);
+//        rbAndroid = findViewById(R.id.radioAndroid);
+//        rbios = findViewById(R.id.radioios);
+//        rbphp = findViewById(R.id.radioPhp);
+//        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+//                switch (i){
+//                    case R.id.radioAndroid :
+//                        Log.d("BBB","Radio android");
+//                        break;
+//                }
+//            }
+//        });
+
     }
 }

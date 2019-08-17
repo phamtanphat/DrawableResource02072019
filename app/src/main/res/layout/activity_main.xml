@@ -22,30 +22,34 @@
         <!--android:id="@+id/buttonSelectorDrawable"-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content" />-->
-    <RadioGroup
-        android:id="@+id/radiogroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:button="@drawable/background_radiobutton_selector"
-            android:textSize="25sp"
-            android:text="Android"
-            android:id="@+id/radioAndroid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:textSize="25sp"
-            android:text="iOS"
-            android:id="@+id/radioios"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:textSize="25sp"
-            android:text="Php"
-            android:id="@+id/radioPhp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RadioGroup>
+    <!--<RadioGroup-->
+        <!--android:id="@+id/radiogroup"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<RadioButton-->
+            <!--android:button="@drawable/background_radiobutton_selector"-->
+            <!--android:textSize="25sp"-->
+            <!--android:text="Android"-->
+            <!--android:id="@+id/radioAndroid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<RadioButton-->
+            <!--android:textSize="25sp"-->
+            <!--android:text="iOS"-->
+            <!--android:id="@+id/radioios"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<RadioButton-->
+            <!--android:textSize="25sp"-->
+            <!--android:text="Php"-->
+            <!--android:id="@+id/radioPhp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</RadioGroup>-->
 
-
+    <ImageView
+        android:src="@drawable/background_imageview_clip"
+        android:id="@+id/imageClip"
+        android:layout_width="200dp"
+        android:layout_height="400dp" />
 </LinearLayout>
