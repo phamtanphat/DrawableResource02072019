@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -14,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 //    ImageView imgBattery;
 //    int level = 0;
-
+    CheckBox cbAndroid,cbios;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,5 +51,20 @@ public class MainActivity extends AppCompatActivity {
 //                handler.postDelayed(this,1000);
 //            }
 //        },1000);
+        cbAndroid = findViewById(R.id.checkboxAndroid);
+        cbios = findViewById(R.id.checkboxios);
+
+        cbAndroid.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    Toast.makeText(MainActivity.this, "Da check", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(MainActivity.this, "Bo check", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //Gia tri trong checkbox
+        cbAndroid.isChecked();
     }
 }
