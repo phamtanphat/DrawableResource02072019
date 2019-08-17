@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView imgBattery;
     int level = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,17 +23,20 @@ public class MainActivity extends AppCompatActivity {
         final Drawable drawable = imgBattery.getDrawable();
         imgBattery.setImageLevel(0);
 
-        CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
+        final CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
             @Override
             public void onTick(long l) {
+                if (level >= 10000) {
+                    level = 0;
+                }
                 level += 1000;
                 drawable.setLevel(level);
-               imgBattery.setImageLevel(drawable.getLevel());
+                imgBattery.setImageLevel(drawable.getLevel());
             }
 
             @Override
             public void onFinish() {
-
+                this.start();
             }
         };
         countDownTimer.start();
