@@ -8,6 +8,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,22 +24,31 @@ public class MainActivity extends AppCompatActivity {
         final Drawable drawable = imgBattery.getDrawable();
         imgBattery.setImageLevel(0);
 
-        final CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
+//        final CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
+//            @Override
+//            public void onTick(long l) {
+//                if (level >= 10000) {
+//                    level = 0;
+//                }
+//                level += 1000;
+//                drawable.setLevel(level);
+//                imgBattery.setImageLevel(drawable.getLevel());
+//            }
+//
+//            @Override
+//            public void onFinish() {
+//                this.start();
+//            }
+//        };
+//        countDownTimer.start();
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
-            public void onTick(long l) {
-                if (level >= 10000) {
-                    level = 0;
-                }
-                level += 1000;
-                drawable.setLevel(level);
-                imgBattery.setImageLevel(drawable.getLevel());
+            public void run() {
+                Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+                handler.postDelayed(this,1000);
             }
+        },1000);
 
-            @Override
-            public void onFinish() {
-                this.start();
-            }
-        };
-        countDownTimer.start();
     }
 }
