@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
 //    int level = 0;
 //    RadioButton rbAndroid,rbios,rbphp;
 //    RadioGroup radioGroup;
+    ImageView imgClip;
+    int level = 0;
+    Drawable drawable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +72,19 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
+        imgClip = findViewById(R.id.imageClip);
+        drawable = imgClip.getDrawable();
+
+        imgClip.setImageLevel(level);
+        imgClip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                level+= 1000;
+                drawable.setLevel(level);
+
+                imgClip.setImageLevel(drawable.getLevel());
+            }
+        });
 
     }
 }
